@@ -5,7 +5,6 @@
 #include "instructions.hpp"
 #include "registers.hpp"
 
-// initialization of af will change
 CPU::CPU(Registers& registers, Instructions& instructions, MMU& mmu, Interrupt& interrupt)
     : registers_{registers}, instructions_{instructions}, mmu_{mmu}, interrupt_{interrupt},
       halt_{false} {
