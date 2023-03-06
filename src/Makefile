@@ -11,6 +11,10 @@ all: $(TARGET)
 clean:
 	rm -rf *.o
 
+.PHONY: run
+run:
+	./$(TARGET) ../$(FILE)
+
 $(TARGET): $(OBJS) Makefile
 	$(CC) $(OBJS) -o $@
 
